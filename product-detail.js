@@ -5,11 +5,11 @@
 let quantity = 1;
 
 let currentProduct = JSON.parse(localStorage.getItem("currentProduct")) || {
-  name: "TH true MILK nguyên chất",
+  name: "YoooMILK nguyên chất",
 
   price: 35000,
 
-  image: "images/UHT-nguyen-chat-1L_275x186.png",
+  image: "images/nguyenchat.png",
 };
 
 // ===============================
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     desc.innerHTML =
       currentProduct.name +
       " mang đến nguồn dinh dưỡng chất lượng, " +
-      "được sản xuất từ nguồn sữa tươi sạch TH true MILK.";
+      "được sản xuất từ nguồn sữa tươi sạch YoooMILK.";
   }
 });
 

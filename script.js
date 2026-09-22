@@ -347,7 +347,7 @@ Cảm ơn quý khách đã mua hàng tại
 
 <br>
 
-<b>TH true MILK</b>
+<b>YoooMILK</b>
 
 </p>
 
@@ -421,3 +421,39 @@ document.addEventListener(
     updateCart();
   },
 );
+function toggleChat() {
+  let box = document.getElementById("chatBox");
+
+  if (box.style.display === "block") {
+    box.style.display = "none";
+  } else {
+    box.style.display = "block";
+  }
+}
+
+function sendMessage() {
+  let input = document.getElementById("userMessage");
+
+  let message = input.value;
+
+  if (message.trim() == "") return;
+
+  let chat = document.getElementById("chatContent");
+
+  chat.innerHTML += `
+        <p>👤 Bạn: ${message}</p>
+    `;
+
+  setTimeout(() => {
+    chat.innerHTML += `
+        <p>
+        🐐 Yooomilk AI:
+        Tôi có thể hỗ trợ bạn về sản phẩm sữa dê, giá bán, khuyến mãi và đặt hàng.
+        </p>
+        `;
+
+    chat.scrollTop = chat.scrollHeight;
+  }, 700);
+
+  input.value = "";
+}

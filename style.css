@@ -1798,3 +1798,114 @@ PREMIUM CART
 
   font-size: 15px;
 }
+/* ================= AI CHAT ================= */
+
+.ai-chat {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 9999;
+}
+
+/* nút tròn */
+
+.ai-btn {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: none;
+
+  background: #0068b7;
+  color: white;
+
+  font-size: 30px;
+  cursor: pointer;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+
+  transition: 0.3s;
+}
+
+.ai-btn:hover {
+  transform: scale(1.1);
+}
+
+/* cửa sổ chat */
+
+.chat-window {
+  display: none;
+
+  width: 330px;
+  height: 430px;
+
+  background: white;
+
+  position: absolute;
+
+  right: 0;
+  bottom: 80px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+  overflow: hidden;
+}
+
+/* header */
+
+.chat-header {
+  background: #0068b7;
+
+  color: white;
+
+  padding: 15px;
+
+  font-weight: bold;
+
+  display: flex;
+
+  justify-content: space-between;
+}
+
+/* nội dung */
+
+.chat-body {
+  height: 300px;
+
+  padding: 15px;
+
+  overflow-y: auto;
+
+  font-size: 14px;
+}
+
+/* nhập */
+
+.chat-input {
+  display: flex;
+
+  border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+  flex: 1;
+
+  border: none;
+
+  padding: 12px;
+
+  outline: none;
+}
+
+.chat-input button {
+  background: #0068b7;
+
+  color: white;
+
+  border: none;
+
+  padding: 0 20px;
+
+  cursor: pointer;
+}

@@ -5,11 +5,33 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>TH true MILK Store</title>
+    <title>YoooMILK Store</title>
 
     <link rel="stylesheet" href="style.css" />
   </head>
+  <!-- AI CHAT BOX -->
+  <div class="ai-chat">
+    <button class="ai-btn" onclick="toggleChat()">💬</button>
 
+    <div class="chat-window" id="chatBox">
+      <div class="chat-header">
+        🐐 Yooomilk AI
+        <span onclick="toggleChat()">×</span>
+      </div>
+
+      <div class="chat-body" id="chatContent">
+        <p>Xin chào 👋</p>
+        <p>Tôi là trợ lý Yooomilk AI.</p>
+        <p>Bạn cần hỗ trợ về sản phẩm hay đơn hàng?</p>
+      </div>
+
+      <div class="chat-input">
+        <input type="text" id="userMessage" placeholder="Nhập câu hỏi..." />
+
+        <button onclick="sendMessage()">Gửi</button>
+      </div>
+    </div>
+  </div>
   <body>
     <!-- ================= HEADER ================= -->
 
@@ -21,7 +43,7 @@
       <!-- LOGO -->
 
       <a href="index.html" class="logo-link">
-        <img src="images/Logo.png" class="logo-image" alt="TH true MILK" />
+        <img src="images/logo.png" class="logo-image" alt="YoooMILK" />
       </a>
 
       <!-- NAV -->
@@ -45,7 +67,7 @@
 
     <div class="side-menu">
       <div class="menu-header">
-        TH true MILK
+        YoooMILK
 
         <span onclick="closeMenu()"> × </span>
       </div>
@@ -56,7 +78,7 @@
 
       <a href="#promotion"> Khuyến mãi </a>
 
-      <a href="#story"> Câu chuyện TH </a>
+      <a href="#story"> Câu chuyện YoooMILK</a>
 
       <a href="#contact"> Liên hệ </a>
     </div>
@@ -66,14 +88,14 @@
     <section class="hero">
       <div class="hero-content">
         <h1>
-          Nguồn sữa tươi sạch<br />
+          MỘT GIỌT TƯƠI<br />
 
-          Vì sức khỏe mọi gia đình
+          MỘT NGÀY LÀNH
         </h1>
 
         <p>
-          Từ nguồn sữa thiên nhiên, TH true MILK mang đến sản phẩm dinh dưỡng
-          chất lượng cho người Việt.
+          Từ nguồn sữa dê tươi sạch, Yooomilk mang đến vị ngon tự nhiên và lựa
+          chọn dinh dưỡng lành mạnh mỗi ngày.
         </p>
 
         <button onclick="scrollProducts()">Mua ngay</button>
@@ -89,7 +111,7 @@
         </div>
 
         <h3>Sản phẩm chính hãng</h3>
-        <p>100% TH true MILK</p>
+        <p>100% YoooMILK</p>
       </div>
 
       <div class="service-box">
@@ -135,17 +157,18 @@
       <img src="images/story.png" />
 
       <div class="story-content">
-        <h2>Câu chuyện TH true MILK</h2>
+        <h2>Câu chuyện YooMilk</h2>
 
         <p>
-          TH true MILK bắt đầu với khát vọng mang đến nguồn sữa tươi sạch cho
-          người Việt, được sản xuất từ hệ thống trang trại công nghệ cao và quy
-          trình khép kín.
+          Giữa nhịp sống hiện đại, Yooomilk ra đời với mong muốn mang đến những
+          ly sữa dê tươi sạch, thơm ngon và tự nhiên, giúp mỗi ngày bắt đầu bằng
+          một lựa chọn lành mạnh.
         </p>
 
         <p>
-          Từ đồng cỏ xanh đến bàn ăn gia đình, mỗi sản phẩm đều được kiểm soát
-          nghiêm ngặt nhằm đảm bảo chất lượng và dinh dưỡng.
+          Chúng tôi tin rằng chăm sóc sức khỏe không nhất thiết phải bắt đầu từ
+          những điều lớn lao. Đôi khi, chỉ cần một ly sữa tươi ngon mỗi ngày
+          cũng có thể trở thành một thói quen tốt.
         </p>
 
         <button>Tìm hiểu thêm</button>
@@ -156,19 +179,21 @@
 
     <section class="nutrition">
       <div class="nutrition-content">
-        <h2>Dinh dưỡng mỗi ngày</h2>
+        <h2>Tươi lành mỗi ngày</h2>
 
         <p>
-          Sữa cung cấp nhiều dưỡng chất cần thiết cho cơ thể như protein, canxi,
-          vitamin và khoáng chất.
+          Sữa dê tươi sạch mang đến nguồn dinh dưỡng tự nhiên, thơm ngon và nhẹ
+          nhàng cho cơ thể.
         </p>
 
         <ul>
-          <li>✓ Bổ sung năng lượng</li>
+          <li>✓ Bổ sung năng lượng cho ngày mới</li>
 
-          <li>✓ Hỗ trợ phát triển thể chất</li>
+          <li>✓ Nguồn dinh dưỡng từ sữa dê tươi</li>
 
-          <li>✓ Phù hợp cho mọi gia đình</li>
+          <li>✓ Không chất bảo quản</li>
+
+          <li>✓ Phù hợp cho cả gia đình</li>
         </ul>
       </div>
 
@@ -183,9 +208,9 @@
       <div class="product-slider">
         <div class="product-track auto">
           <div class="product-card">
-            <img src="images/THnguyenchat.jpeg" />
+            <img src="images/nguyenchat.png" />
 
-            <h3>TH true MILK nguyên chất</h3>
+            <h3>YoooMILK nguyên chất</h3>
 
             <p>Hộp 1L</p>
 
@@ -194,9 +219,9 @@
             <button
               onclick="
                 addCart(
-                  'TH true MILK nguyên chất',
+                  'YoooMILK nguyên chất',
                   35000,
-                  'images/UHT-nguyen-chat-1L_275x186.png',
+                  'images/nguyenchat.png',
                   this,
                 )
               "
@@ -208,7 +233,78 @@
           <div class="product-card">
             <img src="images/itduong.png" />
 
-            <h3>TH true MILK ít đường</h3>
+            <h3>YoooMILK ít đường</h3>
+
+            <p>Hộp 1L</p>
+
+            <strong> 38.000đ </strong>
+
+            <button
+              onclick="
+                addCart('YoooMILK ít đường', 38000, 'images/itduong.png', this)
+              "
+            >
+              Thêm vào giỏ
+            </button>
+          </div>
+
+          <div class="product-card">
+            <img src="images/suachua.png" />
+
+            <h3>YoooMILK YOGURT</h3>
+
+            <p>Lốc 4 hộp</p>
+
+            <strong> 28.000đ </strong>
+
+            <button
+              onclick="
+                addCart('YoooMILK YOGURT', 28000, 'images/suachua.png', this)
+              "
+            >
+              Thêm vào giỏ
+            </button>
+          </div>
+
+          <div class="product-card">
+            <img src="images/hanhnhan.png" />
+
+            <h3>YoooMILK NUT</h3>
+
+            <p>Sữa hạt</p>
+
+            <strong> 45.000đ </strong>
+
+            <button
+              onclick="
+                addCart('YoooMILK NUT', 45000, 'images/hanhnhan.png', this)
+              "
+            >
+              Thêm vào giỏ
+            </button>
+          </div>
+
+          <div class="product-card">
+            <img src="images/organic.png" />
+
+            <h3>YoooMILK Organic</h3>
+
+            <p>Sữa hữu cơ</p>
+
+            <strong> 55.000đ </strong>
+
+            <button
+              onclick="
+                addCart('YoooMILK Organic', 55000, 'images/organic.png', this)
+              "
+            >
+              Thêm vào giỏ
+            </button>
+          </div>
+          <div class="product-card">
+            <img src="images/itduong.png" />
+
+            <h3>YoooMILK ít đường</h3>
 
             <p>Hộp 1L</p>
 
@@ -217,7 +313,7 @@
             <button
               onclick="
                 addCart(
-                  'TH true MILK ít đường',
+                  'YoooMILK ít đường',
                   38000,
                   'images/UHT-it-duong-1L_275x186.png',
                   this,
@@ -231,7 +327,7 @@
           <div class="product-card">
             <img src="images/suachua.png" />
 
-            <h3>TH true YOGURT</h3>
+            <h3>YoooMILK YOGURT</h3>
 
             <p>Lốc 4 hộp</p>
 
@@ -239,7 +335,7 @@
 
             <button
               onclick="
-                addCart('TH true YOGURT', 28000, 'images/suachua.png', this)
+                addCart('YoooMILK YOGURT', 28000, 'images/suachua.png', this)
               "
             >
               Thêm vào giỏ
@@ -247,9 +343,9 @@
           </div>
 
           <div class="product-card">
-            <img src="images/hạnh-nhân-1-l-thumb.png" />
+            <img src="images/hanhnhan.png" />
 
-            <h3>TH true NUT</h3>
+            <h3>YoooMilk NUT</h3>
 
             <p>Sữa hạt</p>
 
@@ -257,12 +353,7 @@
 
             <button
               onclick="
-                addCart(
-                  'TH true NUT',
-                  45000,
-                  'images/hạnh-nhân-1-l-thumb.png',
-                  this,
-                )
+                addCart('YoooMILK NUT', 45000, 'images/hanhnhan.png', this)
               "
             >
               Thêm vào giỏ
@@ -272,7 +363,7 @@
           <div class="product-card">
             <img src="images/organic.png" />
 
-            <h3>TH true MILK Organic</h3>
+            <h3>YoooMILK Organic</h3>
 
             <p>Sữa hữu cơ</p>
 
@@ -280,98 +371,7 @@
 
             <button
               onclick="
-                addCart(
-                  'TH true MILK Organic',
-                  55000,
-                  'images/organic.png',
-                  this,
-                )
-              "
-            >
-              Thêm vào giỏ
-            </button>
-          </div>
-          <div class="product-card">
-            <img src="images/itduong.png" />
-
-            <h3>TH true MILK ít đường</h3>
-
-            <p>Hộp 1L</p>
-
-            <strong> 38.000đ </strong>
-
-            <button
-              onclick="
-                addCart(
-                  'TH true MILK ít đường',
-                  38000,
-                  'images/UHT-it-duong-1L_275x186.png',
-                  this,
-                )
-              "
-            >
-              Thêm vào giỏ
-            </button>
-          </div>
-
-          <div class="product-card">
-            <img src="images/suachua.png" />
-
-            <h3>TH true YOGURT</h3>
-
-            <p>Lốc 4 hộp</p>
-
-            <strong> 28.000đ </strong>
-
-            <button
-              onclick="
-                addCart('TH true YOGURT', 28000, 'images/suachua.png', this)
-              "
-            >
-              Thêm vào giỏ
-            </button>
-          </div>
-
-          <div class="product-card">
-            <img src="images/hạnh-nhân-1-l-thumb.png" />
-
-            <h3>TH true NUT</h3>
-
-            <p>Sữa hạt</p>
-
-            <strong> 45.000đ </strong>
-
-            <button
-              onclick="
-                addCart(
-                  'TH true NUT',
-                  45000,
-                  'images/hạnh-nhân-1-l-thumb.png',
-                  this,
-                )
-              "
-            >
-              Thêm vào giỏ
-            </button>
-          </div>
-
-          <div class="product-card">
-            <img src="images/organic.png" />
-
-            <h3>TH true MILK Organic</h3>
-
-            <p>Sữa hữu cơ</p>
-
-            <strong> 55.000đ </strong>
-
-            <button
-              onclick="
-                addCart(
-                  'TH true MILK Organic',
-                  55000,
-                  'images/organic.png',
-                  this,
-                )
+                addCart('YoooMILK Organic', 55000, 'images/organic.png', this)
               "
             >
               Thêm vào giỏ
@@ -391,7 +391,7 @@
     <section id="promotion" class="promotion">
       <h2>Ưu đãi đặc biệt</h2>
 
-      <p>Mua sản phẩm TH true MILK nhận nhiều ưu đãi hấp dẫn.</p>
+      <p>Mua sản phẩm YoooMILK nhận nhiều ưu đãi hấp dẫn.</p>
 
       <a href="products.html"> Xem ưu đãi </a>
     </section>
@@ -485,7 +485,7 @@
     <!-- ================= FOOTER ================= -->
 
     <footer>
-      <h2>TH true MILK</h2>
+      <h2>YoooMILK</h2>
 
       <p>Vì sức khỏe mọi gia đình</p>
     </footer>
