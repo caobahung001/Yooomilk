@@ -319,7 +319,7 @@ function checkout() {
 
 <div class="success-logo">
 
-TH <span>true MILK</span>
+YoooMILK
 
 </div>
 
